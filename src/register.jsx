@@ -1,15 +1,15 @@
 export const StudyRegister = (props) => {
-  const { studyText, studyTime , onClickRegister, studyChange, records } = props;
+  const { studyText, studyTime , onClickRegister, handleChange, records } = props;
 
   return (
     <>
       <div className="p-5">
         <label htmlFor="">学習内容</label>
-        <input type="text" name="studyText" value={studyText} onChange={studyChange} className="ml-2 w-8/12 border-blue-400 border-2 rounded-md" />
+        <input type="text" name="studyText" value={studyText} onChange={handleChange} className="ml-2 w-8/12 border-blue-400 border-2 rounded-md" />
       </div>
       <div className="p-5">
         <label htmlFor="">学習時間</label>
-        <input type="number" name="studyTime" value={studyTime} onChange={studyChange} className="ml-2 w-8/12 border-blue-400 border-2 rounded-md"/>
+        <input type="number" name="studyTime" value={studyTime} onChange={handleChange} className="ml-2 w-8/12 border-blue-400 border-2 rounded-md"/>
         <span className="ml-2">時間</span>
       </div>
       <div className="p-5">
