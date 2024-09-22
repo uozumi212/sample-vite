@@ -109,7 +109,7 @@ export const StudyInput = () => {
           学習記録一覧
         </h1>
       </header>
-      <div className="rounded-lg border-4 border-blue-200 justify-center mx-auto sm:w-1/3 w-11/12 mt-24">
+      <div className="rounded-lg border-4 border-blue-200 justify-center mx-auto sm:w-1/3 w-11/12 mt-12">
         <StudyRegister
           studyText={studyText}
           studyTime={studyTime}
@@ -131,7 +131,7 @@ export const StudyInput = () => {
           ))}
         </ul>
 
-        <div className="flex mt-8 justify-around items-center">
+        <div className="flex mt-8 justify-around items-center pb-3">
           <p className="ml-4 mt-3 font-bold">合計時間：{totalTime}/1000</p>
           <div className="mt-3 mb-3 sm:w-1/5 w-2/5 text-center bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border-2 border-blue-500 hover:border-transparent rounded-lg cursor-pointer">
             <button onClick={onClickRegister}>登録</button>
