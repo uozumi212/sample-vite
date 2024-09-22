@@ -101,8 +101,6 @@ export const StudyInput = () => {
 
   if (loading) return <div>Loading...</div>;
 
-  console.log('Supabase URL:', import.meta.env.VITE_SUPABASE_URL);
-console.log('Supabase Anon Key:', import.meta.env.VITE_SUPABASE_ANON_KEY ? 'Set' : 'Not Set');
 
   return (
     <>
@@ -111,7 +109,7 @@ console.log('Supabase Anon Key:', import.meta.env.VITE_SUPABASE_ANON_KEY ? 'Set'
           学習記録一覧
         </h1>
       </header>
-      <div className="rounded-lg border-4 border-blue-200 justify-center mx-auto sm:w-1/3 w-11/12 mt-8">
+      <div className="rounded-lg border-4 border-blue-200 justify-center mx-auto sm:w-1/3 w-11/12 mt-24">
         <StudyRegister
           studyText={studyText}
           studyTime={studyTime}
@@ -128,7 +126,7 @@ console.log('Supabase Anon Key:', import.meta.env.VITE_SUPABASE_ANON_KEY ? 'Set'
                   {study.title}：{study.time}時間
                 </li>
               </ul>
-              <button onClick={() => onClickDelete(study.id)} className="bg-black text-white py-1 px-6 border rounded-md">削除</button>
+              <button onClick={() => onClickDelete(study.id)} className="bg-black text-white py-1 px-6 border rounded-lg">削除</button>
             </div>
           ))}
         </ul>
